@@ -1,0 +1,33 @@
+//button-align
+.hnm-prefer__inner.grey-box {
+  .hnm-proceed-total {
+    display: flex;
+    .hnm-total-box {
+      margin-right: 16px;
+    }
+  }
+  .hnm-icon-round {
+    .hnm-load {
+      width: 30px;
+      height: 30px;
+      padding-top: 2px;
+      margin-bottom: -5px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .grey-box__title {
+    font-weight: 600;
+  }
+}
+
+@include mobile {
+  .hnm-prefer__inner.grey-box {
+    .hnm-proceed-total {
+      padding-top: 16px;
+      flex-direction: column;
+    }
+  }
+}

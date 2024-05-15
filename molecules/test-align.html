@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- styles -->
+  <link rel="stylesheet" href="../assets/css/aos.css">
+  <link rel="stylesheet" href="../assets/css/slick.css">
+  <link rel="stylesheet" href="../assets/css/slick-theme.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- styles -->
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- body content start -->
+  <div class="hnm-prefer__inner grey-box">
+    <div class="hnm-prefer__title-sec">
+      <h2 class="grey-box__title">Select your preference</h2>
+      <div class="hnm-total-box">
+        <div class="hnm-total-box__txt">TOTAL</div>
+        <div class="hnm-total-box__amount">$<span id="ContentPlaceHolder1_lblTotalAmount">0</span></div>
+      </div>
+    </div>
+    <div class="hnm-prefer__slider slick-initialized slick-slider">
+
+      <div class="slick-list draggable">
+        <div class="slick-track" style="opacity: 1; width: 0px; transform: translate3d(0px, 0px, 0px);"></div>
+      </div>
+    </div>
+    <div class="hnm-prefer__flex-between">
+      <a class="hnm-button hnm-button--secondary" data-toggle="modal" data-target="#RoomModal"
+        href="javascript:void(0)">ADD ROOMS</a>
+      <input type="submit" name="ctl00$ContentPlaceHolder1$btnProceed" value="PROCEED TO CHECKOUT"
+        id="ContentPlaceHolder1_btnProceed" class="hnm-button hnm-button--secondary">
+    </div>
+    <div class="modal fade hnm-modal" id="RoomModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Rooms</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <select name="ctl00$ContentPlaceHolder1$drpRoomType" id="ContentPlaceHolder1_drpRoomType"
+              class="hnm-modal__desc">
+              <option value="22">Whole Apartment</option>
+              <option value="2">Living Hall</option>
+              <option value="5">Kitchen</option>
+              <option value="18">Master Bedroom</option>
+              <option value="19">Common Bedroom</option>
+              <option value="1">Common Bedroom 2</option>
+              <option value="20">Master Bathroom</option>
+              <option value="23">Common Bathroom</option>
+              <option selected="selected" value="24">Study Room</option>
+
+            </select>
+
+            <div class="hnm-modal__btn">
+              <a id="ContentPlaceHolder1_lnkAddRoom" class="hnm-button"
+                href="javascript:__doPostBack('ctl00$ContentPlaceHolder1$lnkAddRoom','')">ADD ROOM</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- body content end -->
+
+  <!-- scripts -->
+  <script src="../assets/js/jquery.slim.min.js"></script>
+  <script src="../assets/js/aos.js"></script>
+  <script src="../assets/js/slick.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <!-- scripts -->
+</body>
+
+</html>

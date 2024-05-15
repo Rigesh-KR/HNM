@@ -1,0 +1,27 @@
+.hnm-privacy-terms {
+  padding: 32px 0;
+  .hnm-main-head {
+    text-align: center;
+    padding-bottom: 24px;
+    background-color: #f1f1f1;
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+
+  &__sub {
+    color: #5a7e8a;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 16px;
+    padding-top: 6px;
+  }
+
+  &__txt {
+    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 8px;
+  }
+}
