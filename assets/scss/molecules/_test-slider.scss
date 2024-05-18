@@ -170,8 +170,10 @@
     height: var(--height-of-loader);
     border-radius: 30px;
     background-color: rgba(0,0,0,0.2);
-    position: relative;
     z-index: 1;
+    position: absolute;
+    left: 47%;
+    top: 50%;
   }
   
   .loader::before {
@@ -199,16 +201,20 @@
     }
   }
 
-  .load-out {
-    height: 100vh;
+  .hnm-loader {
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
     z-index: 55;
+    display: none;
+    &.active {
+      display: flex;
+    }
     &::after {
         position: absolute;
         content: "";
