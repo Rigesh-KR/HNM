@@ -240,14 +240,27 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #fff;
   overflow: hidden;
   z-index: 9999;
+  &>div {
+    width: 200px;
+    height: auto;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+  }
   &.active {
     display: flex;
   }
+  p {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+  }
   img {
-    width: 600px;
-    height: 350px;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }
