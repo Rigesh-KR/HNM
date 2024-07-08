@@ -10,11 +10,37 @@
 
   &__sub {
     color: #5a7e8a;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 28px;
     font-weight: 400;
-    padding-bottom: 16px;
-    padding-top: 6px;
+    padding: 16px 0;
+  }
+
+  &__list {
+    ul {
+      li {
+        position: relative;
+        padding-left: 12px;
+        a {
+          color: #5a7e8a;
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          left: 0;
+          top: 8px;
+          width: 4px;
+          height: 4px;
+          background-color: #597d89;
+          border-radius: 50%;
+
+        }
+      }
+    }
   }
 
   &__txt {
@@ -23,5 +49,20 @@
     line-height: 24px;
     font-weight: 400;
     padding-bottom: 8px;
+    a {
+      color: #5a7e8a;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+    strong {
+      color: #5a7e8a;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 600;
+      padding: 16px 0;
+      display: block;
+    }
   }
 }
